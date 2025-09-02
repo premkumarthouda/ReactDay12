@@ -27,3 +27,62 @@
 }
 
 /* Write your CSS here */
+.list {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.top-container {
+  display: flex;
+  flex-direction: row;
+}
+.Name {
+  color: #334155;
+  font-family: 'Roboto';
+  font-size: 27px;
+  align-self: flex-start;
+  margin: 9px;
+}
+.date {
+  color: #94a3b8;
+
+  font-family: 'Roboto';
+  font-size: 15px;
+  align-self: flex-start;
+  margin: 9px;
+}
+.btn-contaner {
+  display: flex;
+  flex-direction: crowrlumn;
+  justify-content: space-between;
+}
+.Comment {
+  align-self: center;
+
+  color: #94a3b8;
+
+  font-family: 'Roboto';
+  font-size: 19px;
+  margin: 9px;
+}
+.like-img {
+  height: 24px;
+  width: 24px;
+}
+.para {
+  color: #94a3b8;
+
+  font-family: 'Roboto';
+  font-size: 19px;
+  margin: 9px;
+}
+.delete {
+  height: 24px;
+  width: 24px;
+}
+.para-like {
+  color: #0b69ff;
+
+  font-family: 'Roboto';
+  font-size: 19px;
+  margin: 9px;
+}
