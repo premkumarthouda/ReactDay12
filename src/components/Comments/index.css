@@ -113,3 +113,18 @@ form {
   border: none;
   color: #0284c7;
 }
+.un-list {
+  list-style: none;
+}
+
+.char-profie {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%; /* makes it a circle */
+  display: flex; /* optional: to center text */
+  align-items: center; /* vertical center */
+  justify-content: center; /* horizontal center */
+  color: #fff; /* text color */
+  font-size: 20px; /* size of initials */
+  font-weight: bold;
+}
