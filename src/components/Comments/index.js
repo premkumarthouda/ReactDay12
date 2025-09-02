@@ -1,6 +1,5 @@
 import {Component} from 'react'
 
-import {formatDistanceToNow} from 'date-fns'
 
 import {v4} from 'uuid'
 
@@ -36,7 +35,6 @@ class Comments extends Component {
     this.setState({comment: event.target.value})
     console.log(event.target.value)
   }
-
   onClickLike = id => {
     this.setState(prevState => ({
       commentsList: prevState.commentsList.map(eachItem =>
@@ -46,14 +44,22 @@ class Comments extends Component {
       ),
     }))
   }
-
   onDelete = id => {
     const {commentsList} = this.state
-    const filterCommentsList = commentsList.filter(eachItem => {
-      id !== eachItem.id
-    })
+    const filterCommentsList = commentsList.filter(
+      eachItem => eachItem.id !== id,
+    )
     this.setState({commentsList: filterCommentsList})
   }
+
+  onDelete = id => {
+  const {commentsList} = this.state
+  const filterCommentsList = commentsList.filter(eachItem => {
+    return id !== eachItem.id
+  })
+  this.setState({commentsList: filterCommentsList})
+}
+
 
   addComment = event => {
     event.preventDefault()
