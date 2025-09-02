@@ -44,13 +44,7 @@ class Comments extends Component {
       ),
     }))
   }
-  onDelete = id => {
-    const {commentsList} = this.state
-    const filterCommentsList = commentsList.filter(
-      eachItem => eachItem.id !== id,
-    )
-    this.setState({commentsList: filterCommentsList})
-  }
+  
 
   onDelete = id => {
   const {commentsList} = this.state
